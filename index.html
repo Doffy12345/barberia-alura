@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!--Cambiamos la dirección de los estilos para utilizar los que ya tenemos aquí-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!--Aquí lo que hacemos es importar una fuente especial y gratuita que traemos desde la empresa de Google. Esto viene acompañado de un "font-family" que será utilzado en nuestro CSS.-->
+        </head>
+
+    <body>
+        <!--Aquí lo que hacemos es reemplazar nuestro anterior header con el encabezado que creamos unos cursos atrás-->
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img class="banner" src="banner/banner.jpg">
+        
+        <main> <!--Como buen práctica es identificar nuestra información principal de nuestra página y encerrarla dentro de nuestra etiqueta main-->
+           
+           <section class="principal"> <!--Aquí modificamos nuestro "div" por una "section". ESta funciona parecido al div, también es un divisor de contenido pero es una etiqueta más especial; es una división semántica. Se refiere a que el contenido que está aquí, todo se relaciona entre ellos -->
+
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+
+                <img class="utensilios" src="imagenes/utensilios.jpg" alt="Utensilios de un barbero.">
+
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p> 
+
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>
+                    Nuestro establecimiento está ubicado en el corazón de la ciudad.
+                </p>
+
+                <!--Aquí lo que hice fue ir a "Google maps" buscar cualquier mapa, en este caso fue el de mi ubicación y en las opciones que nos da la aplicación de maps busqué la manera de "compartir o insertar mampa". Nos da un código para poner en HTML que es el siguiente:-->
+
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.91707709751!2d-74.11225019999999!3d4.59773635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1674669014713!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+
+                </div>
+                
+            </section>
+
+            <section class="diferenciales">
+
+                <h3 class="titulo-principal">Diferenciales</h3>
+                
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atención personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                        
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales"> <!--Luego de editar el "display" dentro del CSS por "inline-block" tocó venir aquí y juntar las dos etiquetas para que dentro de la página web apareciera la imagen junto a lista -->
+                </div>
+
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+            </section> 
+
+            
+        </main>
+        
+        <footer> <!--Traemos nuestro footer creado para la Barbería de Alura y lo añadimos a nuestra página principal-->
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
+        </footer>
+        
+    </body>
+</html>
